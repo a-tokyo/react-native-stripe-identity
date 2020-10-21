@@ -65,7 +65,7 @@ export default MyStripeIdentity;
 ## Component props
 
 - `redirectToUrl` (string) - The Identity webpage url - Stripe's [`identity.next_action.redirect_to_url`](https://stripe.com/docs/identity/intents#create-a-verificationintent).
-- `refreshUrl` (string) - The Identity return url - Stripe's identity.return_url - Intercepted to call onRefresh.
+- `refreshUrl` (string) - The Identity return url - Stripe's identity.refresh_url - Intercepted to call onRefresh.
 - `onSuccess` (?Function) - Called upon success of the identity session with `{ ...props, verificationIntentId: 'VERIFICATION_INTENT_ID' }`
 - `onRefresh` (?Function) - Called upon identity session redirecting to refreshUrl with `{ ...props }`
 - `onLoadingComplete` (?Function) - Called when the Stripe identity session webpage loads successfully.

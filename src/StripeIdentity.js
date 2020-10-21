@@ -6,7 +6,7 @@ import { WebView } from 'react-native-webview';
 type Props = {
   /** The Identity webpage url - Stripe's identity.next_action.redirect_to_url */
   redirectToUrl: string,
-  /** The Identity return url - Stripe's identity.return_url - Intercepted to call onRefresh */
+  /** The Identity return url - Stripe's identity.refresh_url - Intercepted to call onRefresh */
   refreshUrl: string,
   /** Called when the Stripe identity session completes with status 'success' */
   onSuccess: ({ [key: string]: any, verificationIntentId?: string }) => any,
@@ -57,7 +57,10 @@ const StripeIdentityWebView = (props: Props) => {
     if (currentUrl.includes('?vi=') || currentUrl.includes('&vi=')) {
       const verificationIntentIdKey = 'vi=';
       const verificationIntentId = currentUrl
-        .substring(currentUrl.indexOf(verificationIntentIdKey), currentUrl.length)
+        .substring(
+          currentUrl.indexOf(verificationIntentIdKey),
+          currentUrl.length,
+        )
         /** remove key */
         .replace(verificationIntentIdKey, '')
         /** remove extra trailing slash */
