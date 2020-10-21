@@ -1,7 +1,6 @@
 {
   "name": "react-native-stripe-identity",
   "version": "0.0.1",
-  "private": true,
   "description": "🆔 React Native implementation for Stripe.js Identity",
   "author": {
     "name": "Ahmed Tarek",
