@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StripeIdentity /> renders props correctly - extra props 1`] = `
+<WebView
+  baseUrl=""
+  cacheEnabled={true}
+  javaScriptEnabled={true}
+  onLoadEnd={[Function]}
+  onLoadStart={[Function]}
+  originWhitelist={
+    Array [
+      "*",
+    ]
+  }
+  source={
+    Object {
+      "uri": undefined,
+    }
+  }
+  useSharedProcessPool={true}
+/>
+`;
+
+exports[`<StripeIdentity /> renders props correctly - options 1`] = `
+<WebView
+  baseUrl=""
+  cacheEnabled={true}
+  javaScriptEnabled={true}
+  onLoadEnd={[Function]}
+  onLoadStart={[Function]}
+  originWhitelist={
+    Array [
+      "*",
+    ]
+  }
+  source={
+    Object {
+      "uri": undefined,
+    }
+  }
+  useSharedProcessPool={true}
+/>
+`;
+
+exports[`<StripeIdentity /> renders props correctly - webViewProps 1`] = `
+<WebView
+  baseUrl=""
+  cacheEnabled={true}
+  javaScriptEnabled={true}
+  onLoadEnd={[Function]}
+  onLoadStart={[Function]}
+  originWhitelist={
+    Array [
+      "https://stripe.com",
+    ]
+  }
+  source={
+    Object {
+      "uri": undefined,
+    }
+  }
+  useSharedProcessPool={true}
+/>
+`;
+
+exports[`<StripeIdentity /> renders props correctly 1`] = `
+<WebView
+  baseUrl=""
+  cacheEnabled={true}
+  javaScriptEnabled={true}
+  onLoadEnd={[Function]}
+  onLoadStart={[Function]}
+  originWhitelist={
+    Array [
+      "*",
+    ]
+  }
+  source={
+    Object {
+      "uri": undefined,
+    }
+  }
+  useSharedProcessPool={true}
+/>
+`;

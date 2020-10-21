@@ -1,0 +1,114 @@
+{
+  "name": "react-native-stripe-identity",
+  "version": "0.0.1",
+  "private": true,
+  "description": "🆔 React Native implementation for Stripe.js Identity",
+  "author": {
+    "name": "Ahmed Tarek",
+    "email": "ahmed.tokyo1@gmail.com",
+    "url": "https://github.com/A-Tokyo"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src/",
+    "lib/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a-tokyo/react-native-stripe-identity.git"
+  },
+  "scripts": {
+    "build": "rm -rf lib && yarn build:flow && yarn build:js",
+    "build:js": "babel src --out-dir lib -s --ignore *.test.js,**/*.test.js",
+    "build:flow": "flow-copy-source -v -i '*.test.js' -i '**/*.test.js' src lib",
+    "test": "yarn build && yarn jest --coverage"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "react-component",
+    "ios",
+    "android",
+    "stripe",
+    "stripe.js",
+    "stripe-sdk",
+    "react-native-stripe",
+    "identity",
+    "stripe-identity",
+    "elements",
+    "react-native-expo",
+    "expo",
+    "webview",
+    "types",
+    "flow",
+    "typescript"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-tokyo/react-native-stripe-identity/issues"
+  },
+  "homepage": "https://github.com/a-tokyo/react-native-stripe-identity#readme",
+  "peerDependencies": {
+    "react-native": "*",
+    "react-native-webview": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-transform-regenerator": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-flow": "^7.10.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/react-hooks": "^3.4.2",
+    "@testing-library/user-event": "^12.1.7",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.5.2",
+    "babel-plugin-lodash": "^3.3.4",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "flow-copy-source": "^2.0.9",
+    "husky": "^4.3.0",
+    "is-html": "^2.0.0",
+    "jest": "^26.5.3",
+    "jest-enzyme": "^7.1.2",
+    "lint-staged": "^10.4.2",
+    "prettier": "2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "^0.63.3",
+    "react-native-webview": "^10.9.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "contributors": [
+    {
+      "name": "Ahmed Tarek",
+      "email": "ahmed.tokyo1@gmail.com",
+      "url": "https://github.com/A-Tokyo"
+    }
+  ]
+}
