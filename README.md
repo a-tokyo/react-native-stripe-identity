@@ -77,6 +77,9 @@ export default MyStripeIdentity;
 - `webViewProps` (?Object) - WebView Component props, spread on the WebView Component.
 - `renderOnComplete` (?(props) => React$Node) - Optional rendering function returning a component to display upon identity completion. note: You don't need this if your onSuccess and onRefresh functions navigate away from the component.
 
+### Troubleshooting
+- If you face Camera/Gallery permissions issues checkout the solutions in [this react-native-permissions issue](https://github.com/react-native-webview/react-native-webview/issues/508#issuecomment-543758204)
+
 
 ## Contributing
 Pull requests are highly appreciated! For major changes, please open an issue first to discuss what you would like to change.
