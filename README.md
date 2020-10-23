@@ -10,9 +10,11 @@ React Native implementation for [Stripe.js Identity](https://stripe.com/docs/ide
 </a>
 <a href="https://twitter.com/intent/follow?screen_name=ahmad_tokyo"><img src="https://img.shields.io/twitter/follow/ahmad_tokyo.svg?label=Follow%20@ahmad_tokyo" alt="Follow @ahmad_tokyo"></img></a>
 
+
 <p align="center">
   <img src="https://i.imgur.com/zgMBFXm.png" width="340px"></img>
 </p>
+
 
 ## Description
 The library allows you to use [Stripe.js Identity](https://stripe.com/docs/identity) with react-native/expo without ejecting. You can use it with both server-side implementations and client-side implementations. Simply ensure you follow the [url structure guidelines below](#important-notes-about-urls).
