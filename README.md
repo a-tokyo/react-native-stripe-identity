@@ -19,6 +19,8 @@ React Native implementation for [Stripe.js Identity](https://stripe.com/docs/ide
 ## Description
 The library allows you to use [Stripe.js Identity](https://stripe.com/docs/identity) with react-native/expo without ejecting. You can use it with both server-side implementations and client-side implementations. Simply ensure you follow the [url structure guidelines below](#important-notes-about-urls).
 
+#### API version
+`identity_beta=v3`
 
 ## Prequisites
 - This library relies on [React Native Webview](https://www.npmjs.com/package/react-native-webview). Please follow [this guide](https://github.com/react-native-community/react-native-webview/blob/HEAD/docs/Getting-Started.md) to install in your project first.
